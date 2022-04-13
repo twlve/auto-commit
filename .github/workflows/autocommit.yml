@@ -44,7 +44,7 @@ jobs:
           
           git commit -m "${arr[$rand]}"
 
-git config --global --add safe.directory /github/workspace
+          git config --global --add safe.directory /github/workspace
           
       - name: GitHub Push
         uses: ad-m/github-push-action@v0.5.0
