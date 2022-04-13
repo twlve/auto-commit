@@ -46,9 +46,8 @@ jobs:
           
       - name: GitHub Push
         uses: ad-m/github-push-action@v0.5.0
-        run: |
-          git config --global --add safe.directory /github/workspace
         with:
           force: true
           directory: "."
           github_token: ${{ secrets.GITHUB_TOKEN }}
+        run: git config --global --add safe.directory /github/workspace
